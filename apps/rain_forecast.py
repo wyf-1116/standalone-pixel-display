@@ -58,7 +58,7 @@ def run():
     else:
         payload = {
             "name": "rain_forecast",
-            "text": "NO RAIN",
+            "text": "DRY",
             "icon": 65260
         }
         
