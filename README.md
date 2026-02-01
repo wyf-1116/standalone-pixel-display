@@ -28,18 +28,22 @@ cd standalone-pixel-display
 ```
 
 ### 2. Configuration
-Create a `.env` file in the root directory and add your configuration (see `.env.example` for reference):
+Create a `.env` file in the root directory and add your configuration (see `.env.example` for reference).
 
-```bash
-# AWTRIX 3 Device IP
-AWTRIX_IP=192.168.x.x
+#### Environment Variables Reference
 
-# OpenWeatherMap API Key
-WEATHER_API_KEY=your_weather_api_key
-
-# NS Railway API Key
-NS_API_KEY=your_ns_api_key
-```
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `AWTRIX_IP` | The IP address of your AWTRIX 3 device. | - |
+| `WEATHER_API_KEY` | Your OpenWeatherMap API key. | - |
+| `CITY` | City name for weather data. | `London` |
+| `COUNTRY_CODE` | ISO 3166-1 alpha-2 country code. | `GB` |
+| `APP_SWITCH_INTERVAL` | Seconds to display each app before switching. | `10` |
+| `UPDATE_INTERVAL` | Seconds to wait between full refresh cycles. | `300` |
+| `NS_API_KEY` | Your NS Railway (Dutch Railways) API key. | - |
+| `NS_STATION_CODE` | The station code for disruption monitoring (e.g., `ALMB`). | `ALMB` |
+| `LAT` | Latitude for Buienradar rain forecast. | `52.38` |
+| `LON` | Longitude for Buienradar rain forecast. | `5.27` |
 
 ### 3. Running with Python
 ```bash
